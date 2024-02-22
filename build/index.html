@@ -36,11 +36,14 @@
     />
 
     <style>
-      h1 {
+      .heading-text {
         font-family: "Dancing Script", cursive;
       }
       body,
-      p {
+      nav,
+      p,
+      li,
+      .special-font {
         font-family: "Lora", serif;
       }
     </style>
@@ -54,11 +57,11 @@
           <img
             src="/src/img/logo3.png"
             class="h-16 md:h-24 mr-3"
-            alt="a treble clef surrounded by a celtic design"
+            alt="a swirly rainbow foot design with the words foot care "
           />
 
           <h1
-            class="text-base text-gray-700 text-xl pt-12 md:text-2xl lg:text-3xl font-semibold whitespace-normal dark:text-white"
+            class="heading-text text-base text-gray-700 text-xl pt-12 md:text-2xl lg:text-3xl font-semibold whitespace-normal dark:text-white"
           >
             by Christine
           </h1>
@@ -98,7 +101,7 @@
           <li>
             <a
               href="index.html"
-              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:text-blue-700 md:bg-transparent md:text-[#4D5D53] md:p-0 md:dark:text-blue-500"
               aria-current="page"
               >Home</a
             >
@@ -124,18 +127,27 @@
               >Before & After</a
             >
           </li>
+
           <li>
             <a
-              href="resources.html"
-              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >Resources</a
+              href="education.html"
+              class="block py-2 pl-3 pr-4 hover:bg-gray-100 dark:hover:bg-gray-600 md:p-0 dark:hover:text-white"
+              >Educational Materials</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="caring.html"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Caring Corner</a
             >
           </li>
           <li>
             <a
               href="contact.html"
               class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >Contact Us</a
+              >Location & Contact</a
             >
           </li>
         </ul>
@@ -144,51 +156,368 @@
     <div
       class="flex-grow flex justify-center items-center bg-[#7EFF00] dark:bg-[#479F78]"
     >
-      <p class="font-sans pt-60 justify-center w-1/2"></p>
+      <div
+        class="bg-lime-100 mt-60 pt-10 mb-10 md:pt-20 pb-20 w-3/4 md:w-2/3 text-center"
+      >
+        <div class="pl-4 pr-4">
+          <h1 class="heading-text text-2xl md:text-4xl font-bold pt-10">
+            Foot Care by Christine provides Foot Care Nurse Services in Nanaimo,
+            BC and surrounding areas.
+          </h1>
+          <div
+            class="w-full flex flex-col md:flex-row p-10 mt-10 border-4 bg-[#FBF9EA]"
+          >
+            <div class="w-full md:w-1/2">
+              <img
+                src="/src/img/foot.jpg"
+                class="md:w-2/3 h-auto border-4"
+                alt="an AI generate image of a swirly rainbow foot"
+              />
+            </div>
+            <div
+              class="w-full md:w-1/2 flex flex-col items-center justify-center"
+            >
+              <h1 class="heading-text text-xl md:text-4xl font-bold">
+                What is a Foot Care Nurse?
+              </h1>
+
+              <p class="special-font text-md md:text-xl">
+                A Foot Care Nurse is a nurse with specialized training in foot
+                care. They focus on assessing, treating, and managing
+                foot-related conditions, especially for patients with diabetes,
+                poor circulation, or arthritis, who are at higher risk for foot
+                complications. Their services include nail trimming, treating
+                corns and calluses, managing foot infections, and offering
+                advice on foot hygiene and proper footwear. Through their
+                expertise, Foot Care Nurses play a key role in maintaining
+                patient mobility, preventing further health issues, and
+                improving overall quality of life.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col pl-4 pr-4 md:flex-row mt-10 items-stretch justify-center"
+        >
+          <!-- Card 1: Before & After Pictures -->
+          <div
+            class="flex-1 max-w-sm bg-[#FBF9EA] md:mr-5 border border-4 dark:bg-gray-800 dark:border-gray-700 mb-10 md:mb-0"
+          >
+            <a href="beforeandafter.html">
+              <img
+                class="p-4"
+                src="/src/img/slippers.png"
+                alt="an AI generated image of a person's ankles and feet wearing beige furry slippers"
+              />
+            </a>
+            <div class="p-5">
+              <a href="beforeandafter.html">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Before & After Pictures
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                See some of Foot Care by Christine's work!
+              </p>
+              <a
+                href="beforeandafter.html"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-900 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                See Before & After pictures
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Card 2: Foot Care Nursing Services -->
+          <div
+            class="flex-1 max-w-sm bg-[#FBF9EA] md:ml-5 border border-4 dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="services.html">
+              <img
+                class="w-full h-auto object-cover p-4"
+                src="/src/img/footcare-edited-300x300.webp"
+                alt="an AI generated cartoon style image of a footcare nurse holding a dremel tool near a patient's foot"
+              />
+            </a>
+            <div class="p-5">
+              <a href="services.html">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Foot Care Nursing Services
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Learn more about the Services we offer
+              </p>
+              <a
+                href="services.html"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-900 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                View our Services
+
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row pl-4 pr-4 mt-10 justify-center items-stretch"
+        >
+          <!-- Card : Caring Corner -->
+          <div
+            class="flex-1 max-w-sm bg-[#FBF9EA] md:mr-5 pb-8 border border-4 dark:bg-gray-800 dark:border-gray-700 mb-10 md:mb-0"
+          >
+            <a href="caring.html">
+              <img
+                class="p-4"
+                src="/src/img/walker.png"
+                alt="an AI generated picture of a 4-wheel walker mobility device with hand brakes and a seat"
+              />
+            </a>
+            <a href="caring.html">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Caring Corner
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              We collect various items to distribute within our client base and
+              can help find homes for used medical equipment in good condition.
+              Click the button below to learn more.
+            </p>
+            <a
+              href="caring.html"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-900 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Learn more about the Caring Corner
+
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- Card 4: Contact & Location -->
+          <div
+            class="flex-1 max-w-sm bg-[#FBF9EA] md:ml-5 border border-4 dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="contact.html">
+              <img
+                class="p-4"
+                src="/src/img/contact.jpg"
+                alt="an AI generated picture a blue rotary telephone in the middle if the image with the words location & contact at the bottom. There is a map marker icon on the top left and an envelope on the right"
+              />
+            </a>
+            <div class="p-5">
+              <a href="contact.html">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Location & Contact
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Find out where to find us and how to get a hold of us!
+              </p>
+              <a
+                href="contact.html"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-900 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Location & Contact Information
+                <svg
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div
+            class="w-full md:w-2/3 flex flex-col justify-center items-center pr-12 pl-12 ml-4 mr-4 mt-20 border-4 bg-[#FBF9EA]"
+          >
+            <div class="text-md md:text-xl pb-2">
+              <!-- <section class="bg-[#FBF9EA] dark:bg-gray-900">
+                <div
+                  class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+                >
+                  <figure class="max-w-screen-md mx-auto">
+                    <svg
+                      class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                      viewBox="0 0 24 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <blockquote>
+                      <p
+                        class="special-font md:text-xl font-medium text-gray-900 dark:text-white"
+                      >
+                        "I have been seeing Christine for Foot Care for a few
+                        years now. Over the years, I have seen multiple
+                        Podiatrists and other Foot Care Nurses, and Christine
+                        does a great job. My feet always feel so much better
+                        when she's done. She is such a kind a caring person, I
+                        really enjoy my visits with her."
+                      </p>
+                    </blockquote>
+                    <figcaption
+                      class="flex items-center justify-center mt-6 space-x-3"
+                    >
+                      <div
+                        class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
+                      >
+                        <div
+                          class="pr-3 font-medium text-gray-900 dark:text-white"
+                        >
+                          Donald W.
+                        </div>
+                        <div
+                          class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400"
+                        >
+                          Foot Care Client
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section> -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
       <div
-        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+        class="w-full mx-auto max-w-screen-xl p-4 flex flex-col md:flex-row items-center md:justify-between"
       >
-        <span class="text-sm text-gray-800 sm:text-center dark:text-gray-400"
-          >© 2024
-          <a href="index.html" class="hover:underline">Foot Care by Christine</a
-          >. All Rights Reserved.
-        </span>
-        <ul
-          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-800 dark:text-gray-400 sm:mt-0"
-        >
-          <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Home</a>
-          </li>
-          <li>
-            <a href="#" class="hover:underline me-4 md:me-6">About</a>
-          </li>
-          <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Services</a>
-          </li>
-          <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Before & After</a>
-          </li>
-          <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Resources</a>
-          </li>
-          <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Contact</a>
-          </li>
-        </ul>
+        <div class="text-lg text-gray-800 text-center dark:text-gray-400">
+          <div class="flex flex-col items-center">
+            <a href="index.html" class="hover:underline"
+              >© 2024 Foot Care by Christine.</a
+            >All Rights Reserved.
+            <a href="tel:+12506193717">Call/Text: (250)619-3717 </a>
+            <a href="mailto:fcbychristine@gmail.com"
+              >Email: fcbychristine@gmail.com</a
+            >
+          </div>
+        </div>
+
+        <div>
+          <ul
+            class="flex flex-wrap items-center justify-center mt-3 text-lg font-medium text-gray-900 dark:text-gray-400 sm:mt-0"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="hover:underline me-4 md:me-6 text-blue-700"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="hover:underline me-4 md:me-6"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="services.html" class="hover:underline me-4 md:me-6"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="beforeandafter.html" class="hover:underline me-4 md:me-6"
+                >Before & After</a
+              >
+            </li>
+
+            <li>
+              <a href="contact.html" class="hover:underline me-4 md:me-6"
+                >Location & Contact</a
+              >
+            </li>
+            <li>
+              <a href="education.html" class="hover:underline me-4 md:me-6"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a href="caring.html" class="hover:underline me-4 md:me-6"
+                >Caring Corner</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script>
-      // Get the button and the navigation menu
-      var menuButton = document.getElementById("menu-button");
-      var navigation = document.getElementById("navbar-sticky");
+      document.addEventListener("DOMContentLoaded", function () {
+        var menuButton = document.getElementById("menu-button");
+        var navbarSticky = document.getElementById("navbar-sticky");
 
-      // Add click event listener to the button
-      menuButton.addEventListener("click", function () {
-        // Toggle the 'hidden' class on the navigation menu
-        navigation.classList.toggle("hidden");
+        menuButton.addEventListener("click", function () {
+          navbarSticky.classList.toggle("hidden");
+        });
       });
     </script>
   </body>
