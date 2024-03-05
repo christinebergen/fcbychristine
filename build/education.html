@@ -38,23 +38,6 @@
         width: 1.5em; /* Adjust the space between the star and the text */
         margin-left: -1.5em; /* Align the star with the list */
       }
-      .iframe-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-      }
-
-      /* Then style the iframe to fit in the container div with full height and width */
-      .responsive-iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-      }
     </style>
   </head>
   <body class="flex flex-col min-h-screen">
@@ -175,7 +158,62 @@
       <div
         class="bg-lime-100 mt-60 mb-10 pt-10 md:pt-20 pb-20 w-3/4 md:w-2/3 text-center flex flex-col justify-center items-center"
       >
-        <h1 class="heading-text font-bold text-4xl pb-8">Coming Soon!!</h1>
+        <div class="pl-4 pr-4">
+          <h1 class="heading-text font-bold text-2xl md:text-4xl pb-8">
+            Foot Care Education by Christine
+          </h1>
+
+          <div class="flex flex-col justify-center items-center">
+            <hr class="rounded border-2 border-lime-900 w-3/4 mb-8" />
+            <div
+              class="w-full md:w-3/4 bg-[#FBF9EA] border-4 flex flex-col items-center justify-center p-20"
+            >
+              <img
+                src="/src/img/clipboard.jpg"
+                class="md:w-1/2 h-auto justify-center items-center border-4"
+              />
+              <hr class="rounded border-2 border-lime-900 w-full md:w-3/4 my-12" />
+              <h2 class="special-font text-lg md:text-2xl font-bold pb-2">
+                Foot Care Education Sessions for Seniors
+              </h2>
+              <h3 class="md:text-lg italic pb-8">
+                Educational sessions for Seniors are offered on the following
+                topics:
+              </h3>
+              <ul class="star-list text-left md:ml-12 mb-12">
+                <li>
+                  Answering questions about when Foot Care would be recommended
+                  to be done by a Foot Care Nurse
+                </li>
+                <li>How to pick a Foot care Nurse & questions to ask</li>
+                <li>
+                  Tips and Tricks on how to continue Foot Care independently
+                </li>
+                <li>Education for Caregivers on the same topics</li>
+              </ul>
+              <p>
+                All Education sessions are designed to be approximately 1 - 1.5
+                hours long, however, in the past if the participating group is
+                large, it can go over that time.
+              </p>
+              <p class="pt-4 font-bold text-lg">
+                Please contact us for more information!
+              </p>
+
+              <!-- <hr class="rounded border-2 border-lime-900 w-3/4" />
+            <h2 class="special-font text-2xl font-bold pt-10">
+              Diabetic Neuropathy Testing
+            </h2>
+            <p class="md:text-lg pb-8"></p>
+            <hr class="rounded border-2 border-lime-900 w-3/4" />
+            <h2 class="special-font text-2xl font-bold pt-10">
+              Treatment of Warts
+            </h2>
+            <p class="md:text-lg pb-8"></p> -->
+              <!-- <hr class="rounded border-2 border-lime-900 w-3/4" /> -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
