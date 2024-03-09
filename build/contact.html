@@ -80,12 +80,12 @@
         <a href="index.html" class="flex items-center md:mb-4">
           <img
             src="/src/img/logo3.png"
-            class="h-16 md:h-24 mr-3"
+            class="h-16 md:h-32 mr-3"
             alt="a swirly rainbow foot design with the words foot care "
           />
 
           <h1
-            class="heading-text text-base text-gray-700 text-xl pt-12 md:text-2xl lg:text-3xl font-semibold whitespace-normal dark:text-white"
+            class="heading-text text-gray-700 text-3xl md:text-4xl lg:text-5xl pt-12 font-semibold whitespace-normal dark:text-white"
           >
             by Christine
           </h1>
@@ -120,7 +120,7 @@
         id="navbar-sticky"
       >
         <ul
-          class="flex flex-col p-4 text-l lg:text-xl md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="flex flex-col p-4 text-xl md:text-2xl md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
             <a
@@ -129,13 +129,13 @@
               >Home</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               href="about.html"
               class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >About Foot Care by Christine</a
             >
-          </li>
+          </li> -->
           <li>
             <a
               href="services.html"
@@ -185,32 +185,53 @@
       </div>
     </nav>
     <div
-      class="flex-grow flex justify-center items-center bg-[#7EFF00] dark:bg-[#479F78]"
+      class="flex-grow flex justify-center items-center bg-[#7EFF00] p-8 md:p-24 dark:bg-[#479F78]"
     >
       <div
-        class="bg-lime-100 mt-60 mb-10 pt-10 md:pt-20 pb-20 w-3/4 md:w-2/3 text-center flex flex-col justify-center items-center"
+        class="bg-lime-100 mt-40 mb-10 pt-10 md:p-20 md:pt-20 pb-20 w-full text-center flex flex-col justify-center items-center"
       >
         <div class="flex flex-col justify-center items-center pl-4 pr-4">
-          <h1 class="heading-text font-bold text-2xl md:text-4xl pb-8">
+          <h1 class="heading-text font-bold text-4xl md:text-6xl pb-8">
             Foot Care by Christine Clinic Address:
           </h1>
           <hr class="rounded border-2 border-lime-900 w-3/4 mb-8" />
           <div
-            class="w-full md:w-3/4 bg-[#FBF9EA] border-4 py-10 flex flex-col items-center"
+            class="w-full bg-[#FBF9EA] border-4 py-10 flex flex-col items-center"
           >
-            <div class="text-md md:text-xl">
-              <p>Unit 2 - 140 Wallace Street</p>
-              <p>Nanaimo, BC</p>
-              <h2 class="pt-4 font-bold pb-2">
-                For inquiries or to make an appointment:
-              </h2>
-              <p class="hidden md:block">Call/Text: (250)619-3717</p>
-              <a href="tel:+12506193717" class="md:hidden"
-                >Call/Text: (250)619-3717
-              </a>
-              <a href="mailto:fcbychristine@gmail.com"
-                >Email: fcbychristine@gmail.com</a
+            <div
+              class="w-full text-md md:text-2xl flex flex-col lg:flex-row items-center justify-center"
+            >
+              <div
+                class="flex flex-col justify-center items-center w-full md:w-1/2 lg:border-r-4"
               >
+                <img
+                  src="/src/img/phone.jpg"
+                  class="h-60 border-4 border-gray-600 mb-8"
+                />
+                <h2 class="pt-4 font-bold pb-2">
+                  For inquiries or to make an appointment:
+                </h2>
+                <p class="hidden md:block">Call/Text: (250)619-3717</p>
+                <a href="tel:+12506193717" class="md:hidden"
+                  >Call/Text: (250)619-3717
+                </a>
+                <a href="mailto:fcbychristine@gmail.com" class="hover:underline"
+                  >Email: fcbychristine@gmail.com</a
+                >
+              </div>
+              <div
+                class="flex flex-col justify-center items-center w-full md:w-1/2"
+              >
+                <img
+                  src="/src/img/globe.jpg"
+                  class="h-60 border-4 border-lime-900 mb-8"
+                />
+                <!-- Photo by <a href="https://unsplash.com/@jkozoski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Juliana Kozoski</a> on <a href="https://unsplash.com/photos/selective-focus-photo-of-terrestrial-desk-globe-IoQioGLrz3Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+
+                <h2 class="pt-4 font-bold pb-2">Clinic Address:</h2>
+                <p class="">Unit 2 - 140 Wallace Street</p>
+                <p class="">Nanaimo, BC</p>
+              </div>
             </div>
             <div class="iframe-container border-4 mt-10 mb-10">
               <iframe
@@ -222,14 +243,16 @@
               ></iframe>
             </div>
 
-            <div class="flex flex-col md:flex-row border-4 p-8 m-4">
+            <div class="flex flex-col lg:flex-row border-4 p-8 m-4">
               <div>
                 <h2
-                  class="heading-text font-bold text-xl md:text-4xl pb-8 pt-8"
+                  class="heading-text font-bold text-4xl md:text-6xl pb-8 pt-8"
                 >
                   We also do Home visits!
                 </h2>
-                <p class="justify-center items-center md:mr-2">
+                <p
+                  class="justify-center items-center text-md md:text-xl md:mr-2"
+                >
                   Home visit spaces are limited and may not be available. Please
                   remember that home visits are for those who do not drive,
                   walking or taking the bus is not an option, or for those who
@@ -237,11 +260,13 @@
                   appointment (doctor, lab, or hairdresser) you can come to the
                   Foot Care Clinic.
                 </p>
-                <p class="pt-2 pb-4">Please feel free to call and discuss.</p>
+                <p class="text-md md:text-xl pt-2 pb-4">
+                  Please feel free to call and discuss.
+                </p>
               </div>
               <img
                 src="/src/img/home.jpg"
-                class="w-full md:w-1/2 border-4 md:ml-2"
+                class="w-full lg:w-1/2 h-auto border-4 md:ml-2"
                 alt="a cartoonish AI generated image of a craftsman style house and a classic style light blue car parked on the street infront."
               />
             </div>
@@ -251,35 +276,20 @@
     </div>
     <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
       <div
-        class="w-full mx-auto max-w-screen-xl p-4 flex flex-col md:flex-row items-center md:justify-between"
+        class="w-full mx-auto max-w-screen-xl p-4 flex flex-col md:flex-col items-center md:justify-between"
       >
-        <div class="text-lg text-gray-800 text-center dark:text-gray-400">
-          <div class="flex flex-col items-center">
-            <a href="index.html" class="hover:underline"
-              >© 2024 Foot Care by Christine.</a
-            >All Rights Reserved.
-            <p class="hidden md:block">Call/Text: (250)619-3717</p>
-            <a href="tel:+12506193717" class="md:hidden"
-              >Call/Text: (250)619-3717
-            </a>
-            <a href="mailto:fcbychristine@gmail.com"
-              >Email: fcbychristine@gmail.com</a
-            >
-          </div>
-        </div>
-        <hr class="rounded border-2 border-gray-400 w-3/4 md:hidden my-4" />
         <div>
           <ul
-            class="flex flex-wrap items-center justify-center mt-3 text-lg font-medium text-gray-900 dark:text-gray-400 sm:mt-0"
+            class="flex flex-wrap items-center justify-center mt-3 text-lg md:text-xl font-medium text-gray-900 dark:text-gray-400 sm:mt-0"
           >
             <li>
               <a href="index.html" class="hover:underline me-4 md:me-6">Home</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="about.html" class="hover:underline me-4 md:me-6"
                 >About</a
               >
-            </li>
+            </li> -->
             <li>
               <a href="services.html" class="hover:underline me-4 md:me-6"
                 >Services</a
@@ -317,6 +327,20 @@
               >
             </li>
           </ul>
+        </div>
+        <hr class="rounded border-2 border-gray-400 w-3/4 md:hidden my-4" />
+        <div class="text-lg text-gray-800 text-center dark:text-gray-400">
+          <div class="flex flex-col md:flex-row items-center pt-4 pb-4">
+            <p class="md:pr-4">© 2024 Foot Care by Christine</p>
+            <p class="md:pr-4">All Rights Reserved.</p>
+            <p class="hidden md:block md:pr-4">Call/Text: (250)619-3717</p>
+            <a href="tel:+12506193717" class="md:hidden"
+              >Call/Text: (250)619-3717
+            </a>
+            <a href="mailto:fcbychristine@gmail.com" class="hover:underline"
+              >Email: fcbychristine@gmail.com</a
+            >
+          </div>
         </div>
       </div>
     </footer>
