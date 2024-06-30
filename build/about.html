@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Foot Care by Christine provides professional Foot Care Nurse Services in Nanaimo,
+    BC and surrounding areas."
+    />
     <title>Foot Care by Christine</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -46,37 +51,13 @@
       .special-font {
         font-family: "Lora", serif;
       }
-      .star-list li::before {
-        content: "\2605"; /* Unicode character for a solid star */
-        color: black; /* Color of the star */
-        display: inline-block;
-        width: 1.5em; /* Adjust the space between the star and the text */
-        margin-left: -1.5em; /* Align the star with the list */
-      }
-      .iframe-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-      }
-
-      /* Then style the iframe to fit in the container div with full height and width */
-      .responsive-iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-      }
     </style>
   </head>
   <body class="flex flex-col min-h-screen">
-    <nav
+    <!-- <nav
       class="bg-white text-[#4D5D53] p-8 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
     >
-      <div class="flex md:flex-wrap items-center justify-between mx-auto">
+      <div class="flex flex-wrap items-center justify-between mx-auto">
         <a href="index.html" class="flex items-center md:mb-4">
           <img
             src="/src/img/logo3.png"
@@ -125,22 +106,22 @@
           <li>
             <a
               href="index.html"
-              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
+              class="block py-2 pl-3 pr-4 rounded text-[#4D5D53] hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
+              aria-current="page"
               >Home</a
             >
           </li>
-          <!-- <li>
+          <li>
             <a
               href="about.html"
-              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >About Foot Care by Christine</a
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded lg:text-blue-700 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >About</a
             >
-          </li> -->
+          </li>
           <li>
             <a
               href="services.html"
-              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded lg:text-blue-700 hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
-              aria-current="page"
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
               >Services</a
             >
           </li>
@@ -183,47 +164,313 @@
           </li>
         </ul>
       </div>
+    </nav> -->
+    <nav
+      class="bg-white text-[#4D5D53] p-8 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div class="flex items-center justify-between mx-auto">
+        <a href="index.html" class="flex items-center md:mb-4">
+          <img
+            src="/src/img/logo3.png"
+            class="h-16 lg:h-32 mr-3"
+            alt="a swirly rainbow foot design with the words foot care"
+          />
+          <h1
+            class="heading-text text-gray-700 pt-12 text-3xl md:text-5xl lg:text-6xl font-semibold whitespace-normal dark:text-white"
+          >
+            by Christine
+          </h1>
+        </a>
+        <button
+          data-collapse-toggle="navbar-sticky"
+          type="button"
+          id="menu-button"
+          class="md:inline-flex lg:hidden items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-8 h-8"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        class="hidden lg:flex items-center justify-between w-full lg:flex-wrap lg:w-auto lg:order-1"
+        id="navbar-sticky"
+      >
+        <ul
+          class="flex flex-col lg:flex-row lg:space-x-4 p-4 text-xl md:text-2xl lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:flex-wrap lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="block py-2 pl-3 pr-4 rounded text-[#4D5D53] hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded lg:text-blue-700 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 lg:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="services.html"
+              class="block py-2 pl-3 pr-4 text-[#4D5D53] rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="beforeandafter.html"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
+              >Before & After</a
+            >
+          </li>
+          <li>
+            <a
+              href="education.html"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="caring.html"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
+              >Caring Corner</a
+            >
+          </li>
+          <li>
+            <a
+              href="hcprofessionals.html"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
+              >Health Care Professionals</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 whitespace-nowrap"
+              >Location & Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
+
     <div
       class="flex-grow flex justify-center items-center bg-[#7EFF00] p-8 lg:p-24 dark:bg-[#479F78]"
     >
       <div
-        class="bg-lime-100 mt-40 md:p-10 lg:p-20 pt-10 mb-10 pb-20 w-full text-center flex flex-col justify-center items-center"
+        class="bg-lime-100 mt-40 p-4 md:p-10 lg:p-20 pt-10 mb-10 pb-20 w-full text-center"
       >
-        <h1 class="heading-text font-bold text-4xl pb-8">Coming Soon!!</h1>
-      </div>
-    </div>
-    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-      <div
-        class="w-full mx-auto max-w-screen-xl p-4 flex flex-col md:flex-row items-center md:justify-between"
-      >
-        <div class="text-lg text-gray-800 text-center dark:text-gray-400">
-          <div class="flex flex-col items-center">
-            <a href="index.html" class="hover:underline"
-              >© 2024 Foot Care by Christine.</a
-            >All Rights Reserved.
-            <p class="hidden md:block">Call/Text: (250)619-3717</p>
-            <a href="tel:+12506193717" class="md:hidden"
-              >Call/Text: (250)619-3717
-            </a>
-            <a href="mailto:fcbychristine@gmail.com"
-              >Email: fcbychristine@gmail.com</a
-            >
+        <h1 class="heading-text text-4xl md:text-6xl font-bold">
+          About Christine
+        </h1>
+        <div class="flex justify-center">
+          <hr class="rounded border-2 border-lime-900 w-3/4 mt-8 mb-8" />
+        </div>
+        <div class="bg-[#FBF9EA] w-full border-4">
+          <div class="p-4">
+            <p class="text-start text-md md:text-xl">
+              My name is Christine, it is the name I chose when I was 11. I knew
+              I was a caregiver from very early on. <br /><br />In my 20's I was
+              trained by an RN to help care for her complex care father to
+              provide care in his own home. I learned skills that were quite
+              involved and complex. This helped me figure out that I liked
+              helping people and I loved the challenges of complex care. Shortly
+              afterwards, I went to Malaspina University College (now Vancouver
+              Island University) and finished the Home Support Residential Care
+              Aid course in 1997 (now called Health Care Aid) and completed in
+              the top 5. This led me to my first job in healthcare, a group home
+              for high medical need clients, (most of the clients had challenges
+              with cognitive differences, physical challenges, and high seizure
+              activity). <br /><br />While working at the Group home I gained
+              employment working with Quadreplegic and Paraplegic people living
+              in the community. I learned a lot in those three years. I learned
+              mostly that I need more education. So I went back to school and
+              completed the Licensed Practical Nursing program in 2001.
+              Immediately upon graduation I got a temporary line on the acute
+              medical floor (floor 3) at Nanaimo Regional General Hospital for
+              3years. I loved this work. It was intense. The learning curve was
+              steep and the acuity was high. After the 3year line on the third
+              floor I continue to work all over the hospital for approximately
+              15 years. Rehab, Long Term Care, Emergency, Palliative, Portering,
+              Acute Care, are all the places I worked, however, after all that
+              time I was unable to find a permanent line. 2003 I had my first
+              baby and in 2007 my second. Both beautiful girls. I was struggling
+              to work as an on-call employee and as a new mom. This is when I
+              made the decision to find other work. <br /><br />On a whim I
+              dropped off a resume at a medical clinic in my neighbourhood and
+              surprisingly started working the next week. I loved this job. I
+              got to provide education to patients, provide wound care and
+              general support to the physicians and staff alike. A couple of
+              years later I was promoted to Manager. Also, at this time our
+              Medical Director had 2 patients that had negative outcomes due to
+              poor Foot Care, and this affected him deeply. He and I had worked
+              together for a few years at this point and he knew that I loved
+              education. He graciously offered to pay for my course if I would
+              bring the skills into the clinic in hopes to never have another
+              unnecessary negative outcome. I agreed and was lucky enough to
+              work with VIHA afterwards working with low income and/or
+              complex/chronic disease patients. This was an incredible
+              experience. In 2018 the clinic had to close due to physician
+              shortages and I opted to go out on my own. This was the start of
+              my independent journey.
+            </p>
+            <div class="flex justify-center mt-10 mb-10">
+              <img
+                src="/src/img/doula/tree3.webp"
+                class="h-48 sm:h-96 border-4"
+              />
+            </div>
+            <h2 class="text-center text-lg md:text-2xl mb-2 mt-12">
+              The Next Chapter
+            </h2>
+            <p class="text-start text-md md:text-xl">
+              All throughout my journey I was exposed to deaths in all of its
+              forms, sudden, long, peaceful, and violent. I have had many
+              conversations with medical personnel, families and friends of the
+              dying and the dying themselves. I noticed that the people that had
+              a lot of conversations around death and dying seemed to be more at
+              peace in their final moments than those who hadn't. I also noticed
+              that the more accepting of the inevitable outcome everyone
+              involved was, the more calm and supported the dying seem to be.
+              This has been a side note in everything I did as a nurse, as an
+              observer and as caregiver or a person who truly cares. Along the
+              way, I also have been blessed to have some discussions with my
+              Foot Care Clients and realized that I was drawn to working with
+              people around the dying process. This is my second calling and
+              what I am working on currently. I am in the process of learning
+              how to be an End of Life Doula.<br /><br />
+              What is an End of Life Doula? An End of Life Doula is someone who
+              supports people in the end of life. They help with discussions
+              around death to empower, educate and encourage all who become
+              involved in the process. Culturally in North America death is a
+              taboo subject and considered negatively, or bad instead of part of
+              the human experience. The End of Life Doula does not impose
+              preconceived notions of death and dying upon the person and their
+              family/friends rather they empower them to figure out what is
+              important to them and how to create an experience that is
+              meaningful to the person who is dying and their loved ones. A
+              person does need to be actively dying or given a life limiting
+              diagnosis to utilize an End of Life Doula. An End of Life Doula
+              can be a part of the planning at any point. <br /><br />I look
+              forward to continuing on this journey and hope to be able to
+              provide this service in the near future. If you wish to learn more
+              about End of Life Doula work please feel free to browse the
+              following website:
+              <a
+                href="https://endoflifedoulaassociation.org/"
+                class="hover:underline text-blue-700"
+                >https://endoflifedoulaassociation.org/.</a
+              >
+            </p>
+            <div class="flex justify-center mt-10 mb-10">
+              <img
+                src="/src/img/doula/serene.webp"
+                class="h-48 sm:h-96 border-4"
+              />
+            </div>
           </div>
         </div>
-        <hr class="rounded border-2 border-gray-400 w-3/4 md:hidden my-4" />
+
+        <!-- <div class="flex justify-center w-full">
+          <div
+            class="w-full flex flex-col justify-center items-center pr-12 pl-12 ml-4 mr-4 mt-20 border-4 bg-[#FBF9EA]"
+          >
+            <div class="text-md md:text-xl pb-2">
+              <section class="bg-[#FBF9EA] dark:bg-gray-900">
+                <div
+                  class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+                >
+                  <figure class="max-w-screen-md mx-auto">
+                    <svg
+                      class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                      viewBox="0 0 24 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <blockquote>
+                      <p
+                        class="special-font md:text-xl font-medium text-gray-900 dark:text-white"
+                      >
+                        "I have been seeing Christine for Foot Care for a few
+                        years now. Over the years, I have seen multiple
+                        Podiatrists and other Foot Care Nurses, and Christine
+                        does a great job. My feet always feel so much better
+                        when she's done. She is such a kind a caring person, I
+                        really enjoy my visits with her."
+                      </p>
+                    </blockquote>
+                    <figcaption
+                      class="flex items-center justify-center mt-6 space-x-3"
+                    >
+                      <div
+                        class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
+                      >
+                        <div
+                          class="pr-3 font-medium text-gray-900 dark:text-white"
+                        >
+                          Donald W.
+                        </div>
+                        <div
+                          class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400"
+                        >
+                          Foot Care Client
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 flex flex-col md:flex-col items-center md:justify-between"
+      >
         <div>
           <ul
-            class="flex flex-wrap items-center justify-center mt-3 text-lg font-medium text-gray-900 dark:text-gray-400 sm:mt-0"
+            class="flex flex-wrap items-center justify-center mt-3 text-lg md:text-xl font-medium text-gray-900 dark:text-gray-400 sm:mt-0"
           >
             <li>
-              <a href="index.html" class="hover:underline me-4 md:me-6">Home</a>
+              <a
+                href="index.html"
+                class="hover:underline me-4 md:me-6"
+                aria-current="page"
+                >Home</a
+              >
             </li>
             <li>
               <a
                 href="about.html"
                 class="hover:underline me-4 md:me-6 text-blue-700"
-                aria-current="page"
                 >About</a
               >
             </li>
@@ -261,6 +508,20 @@
               >
             </li>
           </ul>
+        </div>
+        <hr class="rounded border-2 border-gray-400 w-3/4 md:hidden my-4" />
+        <div class="text-lg text-gray-800 text-center dark:text-gray-400">
+          <div class="flex flex-col md:flex-row items-center pt-4 pb-4">
+            <p class="md:pr-4">© 2024 Foot Care by Christine</p>
+            <p class="md:pr-4">All Rights Reserved.</p>
+            <p class="hidden md:block md:pr-4">Call/Text: (250)619-3717</p>
+            <a href="tel:+12506193717" class="md:hidden"
+              >Call/Text: (250)619-3717
+            </a>
+            <a href="mailto:fcbychristine@gmail.com" class="hover:underline"
+              >Email: fcbychristine@gmail.com</a
+            >
+          </div>
         </div>
       </div>
     </footer>
